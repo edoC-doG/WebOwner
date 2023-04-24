@@ -1,19 +1,19 @@
-import { creatSlice } from '@reduxjs/toolkit';
+import { createSlice } from '@reduxjs/toolkit';
 
 const initialState = {
-    model : "dark"
+    mode: "dark",
 };
 
-export const globalSlice = creatSlice ({
+export const globalSlice = createSlice ({
     name: 'global',
     initialState,
     reducers: {
         setMode: (state) => {
-            state.mode = state.mode === 'light' ? 'dark': 'light';  
-        }
-    }
-})
+            state.mode = state.mode === "light" ? "dark" : "light";  
+        },
+    },
+});
 
 export const { setMode } = globalSlice.actions;
 
-export default globalSlice.reducers;
+export default globalSlice.reducer;    
