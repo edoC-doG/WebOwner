@@ -43,7 +43,7 @@ const navItems = [
     icon: null,
   },
   {
-    text: "Products",
+    text: "Services",
     icon: <ShoppingCartOutlined />,
   },
   {
